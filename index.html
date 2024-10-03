@@ -42,6 +42,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
+
+  <style>
+    .gallery .card {
+      height: 50%;
+      /* Ensures cards take full height */
+    }
+
+    .gallery img {
+      object-fit: cover;
+      /* Ensures the image covers the div without stretching */
+      width: 100%;
+      height: 100%;
+      /* Adjust the height to your preference */
+      border-radius: 0.5rem;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -194,7 +211,7 @@
                     </p>
                     <div class="btn-box">
                       <a class="nav-link btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#joinModal">
-                        <i class="fa fa-user" aria-hidden="true"></i>  <span class="text-white">Member</span>
+                        <i class="fa fa-user" aria-hidden="true"></i> <span class="text-white">Member</span>
                       </a>
                     </div>
                   </div>
@@ -678,6 +695,69 @@
 
   <!-- end client section -->
 
+
+  <div class="container mt-1"></div>
+  <!-- <h1 class="text-center">Image Gallery</h1> -->
+  <div class="row gallery">
+    <!-- <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/1.jpg" class="card-img-top" height="50px" width="50px" alt="Image 1">
+      
+      </div>
+    </div> -->
+    <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/2.jpg" class="card-img-top" alt="Image 2">
+        
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card">
+        <img src="images/3.jpg" class="card-img-top" alt="Image 3">
+       
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/4.jpg" class="card-img-top" alt="Image 4">
+       
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/5.jpg" class="card-img-top" alt="Image 5">
+       
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/6.jpg" class="card-img-top" alt="Image 6">
+       
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="card">
+        <img src="images/7.jpg" class="card-img-top" alt="Image 6">
+       
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card">
+        <img src="images/8.jpg" class="card-img-top" alt="Image 6">
+        <div class="card-body">
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card">
+        <img src="images/9.jpg" class="card-img-top" alt="Image 6">
+        
+      </div>
+    </div>
+
+  </div>
+  </div>
   <!-- contact section -->
   <section class="contact_section">
     <div class="container-fluid">
