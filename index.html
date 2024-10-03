@@ -59,6 +59,9 @@
     }
   </style>
 
+
+
+
 </head>
 
 <body>
@@ -241,53 +244,141 @@
             <form id="joinForm">
               <!-- First Name and Last Name -->
               <div class="row mb-3">
-                <div class="col">
-                  <label for="firstName" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="district" class="form-label">District</label>
+                    <select class="form-control" id="district">
+                      <option value="" disabled selected>Select your district</option>
+                      <option value="Kasargod">Kasargod</option>
+                      <option value="Kannur">Kannur</option>
+                      <option value="Wayanad">Wayanad</option>
+                      <option value="Kozhikode">Kozhikode</option>
+                      <option value="Malappuram">Malappuram</option>
+                      <option value="Palakkad">Palakkad</option>
+                      <option value="Thrissur">Thrissur</option>
+                      <option value="Ernakulam">Ernakulam</option>
+                      <option value="Alappuzha">Alappuzha</option>
+                      <option value="Kottayam">Kottayam</option>
+                      <option value="Idukki">Idukki</option>
+                      <option value="Pathanamthitta">Pathanamthitta</option>
+                      <option value="Kollam">Kollam</option>
+                      <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="col">
-                  <label for="lastName" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+
+                <div class="mb-3">
+                  <label for="assembly" class="form-label">Assembly</label>
+                  <select class="form-control" id="assembly">
+                    <option value="" disabled selected>Select your assembly</option>
+                    <option value="Manjeshwaram">Manjeshwaram</option>
+                    <option value="Kasargod">Kasargod</option>
+                    <option value="Udma">Udma</option>
+                    <option value="Kanhangad">Kanhangad</option>
+                    <option value="Thrikaripur">Thrikaripur</option>
+                    <option value="Payyanur">Payyanur</option>
+                    <option value="Kalliasseri">Kalliasseri</option>
+                    <option value="Taliparamba">Taliparamba</option>
+                    <option value="Irikkur">Irikkur</option>
+                    <option value="Azhikode">Azhikode</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Dharmadom">Dharmadom</option>
+                    <option value="Thalassery">Thalassery</option>
+                    <option value="Kuthuparamba">Kuthuparamba</option>
+                    <option value="Mattanur">Mattanur</option>
+                    <option value="Peravoor">Peravoor</option>
+                    <option value="Mananthavady">Mananthavady</option>
+                    <option value="Sulthan Bathery">Sulthan Bathery</option>
+                    <option value="Kalpetta">Kalpetta</option>
+                    <option value="Vatakara">Vatakara</option>
+                    <!-- Add more assemblies here -->
+                  </select>
                 </div>
+
               </div>
 
-              <!-- Email -->
-              <div class="mb-3">
-                <label for="email" class="form-label">Assembly</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your assembly">
-              </div>
-
-              <!-- Phone Number -->
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
                 <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
               </div>
+              <!-- Email -->
 
-              <!-- Address Main Heading -->
-              <!-- <h6>Address</h6> -->
-
-              <!-- Address Fields -->
               <div class="mb-3">
                 <label for="address" class="form-label">Address Line 1</label>
                 <input type="text" class="form-control" id="address" placeholder="Enter your address">
               </div>
               <div class="mb-3">
-                <label for="address2" class="form-label">Address Line 2</label>
-                <input type="text" class="form-control" id="address2"
-                  placeholder="Enter your street address 2 (optional)">
+                <label for="place" class="form-label">Place</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your place">
               </div>
 
-              <!-- City and State -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+
               <div class="row mb-3">
                 <div class="col">
-                  <label for="city" class="form-label">Place</label>
-                  <input type="text" class="form-control" id="city" placeholder="Enter your city">
-                </div>
-                <div class="col">
-                  <label for="state" class="form-label">District</label>
-                  <input type="text" class="form-control" id="state" placeholder="Enter your state">
+                  <label for="district" class="form-label">District</label>
+                  <select class="form-control" id="district">
+                    <option value="" disabled selected>Select your district</option>
+                    <option value="Kasargod">Kasargod</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Wayanad">Wayanad</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                    <option value="Malappuram">Malappuram</option>
+                    <option value="Palakkad">Palakkad</option>
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Alappuzha">Alappuzha</option>
+                    <option value="Kottayam">Kottayam</option>
+                    <option value="Idukki">Idukki</option>
+                    <option value="Pathanamthitta">Pathanamthitta</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                  </select>
                 </div>
               </div>
+
+              <div class="mb-3">
+                <label for="assembly" class="form-label">Assembly</label>
+                <select class="form-control" id="assembly">
+                  <option value="" disabled selected>Select your assembly</option>
+                  <option value="Manjeshwaram">Manjeshwaram</option>
+                  <option value="Kasargod">Kasargod</option>
+                  <option value="Udma">Udma</option>
+                  <option value="Kanhangad">Kanhangad</option>
+                  <option value="Thrikaripur">Thrikaripur</option>
+                  <option value="Payyanur">Payyanur</option>
+                  <option value="Kalliasseri">Kalliasseri</option>
+                  <option value="Taliparamba">Taliparamba</option>
+                  <option value="Irikkur">Irikkur</option>
+                  <option value="Azhikode">Azhikode</option>
+                  <option value="Kannur">Kannur</option>
+                  <option value="Dharmadom">Dharmadom</option>
+                  <option value="Thalassery">Thalassery</option>
+                  <option value="Kuthuparamba">Kuthuparamba</option>
+                  <option value="Mattanur">Mattanur</option>
+                  <option value="Peravoor">Peravoor</option>
+                  <option value="Mananthavady">Mananthavady</option>
+                  <option value="Sulthan Bathery">Sulthan Bathery</option>
+                  <option value="Kalpetta">Kalpetta</option>
+                  <option value="Vatakara">Vatakara</option>
+                  <!-- Add more assemblies here -->
+                </select>
+              </div>
+
+
+              <!-- Phone Number -->
+
+
+              <!-- Address Main Heading -->
+              <!-- <h6>Address</h6> -->
+
+              <!-- Address Fields -->
+
+
+              <!-- City and State -->
 
               <!-- Postal Code and Country -->
               <!-- <div class="row mb-3">
@@ -701,41 +792,41 @@
   <div class="row gallery">
     <div class="col-md-4 ">
       <div class="card">
-        <img src="images/10.jpeg" class="card-img-top"" alt="Image 1">
-      
+        <img src="images/10.jpeg" class="card-img-top"" alt=" Image 1">
+
       </div>
     </div>
     <div class="col-md-4 ">
       <div class="card">
         <img src="images/11.jpeg" class="card-img-top" alt="Image 2">
-        
+
       </div>
     </div>
     <div class="col-md-4">
       <div class="card">
         <img src="images/12.jpeg" class="card-img-top" alt="Image 3">
-       
+
       </div>
     </div>
     <div class="col-md-4 ">
       <div class="card">
         <img src="images/14.jpeg" class="card-img-top" alt="Image 4">
-       
+
       </div>
     </div>
     <div class="col-md-4 ">
       <div class="card">
         <img src="images/13.jpeg" class="card-img-top" alt="Image 5">
-       
+
       </div>
     </div>
     <div class="col-md-4 ">
       <div class="card">
         <img src="images/last.jpeg" class="card-img-top" alt="Image 6">
-       
+
       </div>
     </div>
-  
+
 
   </div>
   </div>
