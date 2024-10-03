@@ -110,6 +110,8 @@
                   </a>
                 </li>
                 <!-- Modal Structure -->
+                <!-- Modal Structure -->
+                <!-- Modal Structure -->
                 <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog">
@@ -119,37 +121,161 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <form id="joinForm">
+                          <!-- First Name and Last Name -->
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="firstName" class="form-label">First Name</label>
+                              <input type="text" class="form-control" id="firstName"
+                                placeholder="Enter your first name">
+                            </div>
+                            <div class="col">
+                              <label for="lastName" class="form-label">Last Name</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                            </div>
                           </div>
+
+                          <!-- Email -->
                           <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
                           </div>
+
+                          <!-- Phone Number -->
                           <div class="mb-3">
                             <label for="phone" class="form-label">Phone</label>
                             <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
                           </div>
+
+                          <!-- Address Main Heading -->
+                          <h6>Address</h6>
+
+                          <!-- Address Fields -->
                           <div class="mb-3">
-                            <label for="niyamasabha" class="form-label">Niyamasabha</label>
-                            <input type="text" class="form-control" id="niyamasabha"
-                              placeholder="Enter Niyamasabha name">
+                            <label for="address" class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter your address">
                           </div>
                           <div class="mb-3">
-                            <label for="district" class="form-label">District</label>
-                            <input type="text" class="form-control" id="district" placeholder="Enter your district">
+                            <label for="address2" class="form-label">Address Line 2</label>
+                            <input type="text" class="form-control" id="address2"
+                              placeholder="Enter your street address 2 (optional)">
                           </div>
+
+                          <!-- City and State -->
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="city" class="form-label">City</label>
+                              <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                            </div>
+                            <div class="col">
+                              <label for="state" class="form-label">State</label>
+                              <input type="text" class="form-control" id="state" placeholder="Enter your state">
+                            </div>
+                          </div>
+
+                          <!-- Postal Code and Country -->
+                          <div class="row mb-3">
+                            <div class="col">
+                              <label for="postal" class="form-label">Postal Code</label>
+                              <input type="text" class="form-control" id="postal" placeholder="Enter your postal code">
+                            </div>
+                            <div class="col">
+                              <label for="country" class="form-label">Country</label>
+                              <input type="text" class="form-control" id="country" placeholder="Enter your country">
+                            </div>
+                          </div>
+
+                          <!-- Birth Date -->
+                          <div class="mb-3">
+                            <label for="birthdate" class="form-label">Birth Date</label>
+                            <input type="date" class="form-control" id="birthdate">
+                          </div>
+
+                          <!-- Where Did You Hear About Us -->
+                          <h6>Where Did You Hear About Us?</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Friend" id="friend">
+                            <label class="form-check-label" for="friend">A Friend</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Google" id="google">
+                            <label class="form-check-label" for="google">Google</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Blog Post" id="blogPost">
+                            <label class="form-check-label" for="blogPost">Blog Post</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="News Article" id="newsArticle">
+                            <label class="form-check-label" for="newsArticle">News Article</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Other" id="other">
+                            <label class="form-check-label" for="other">Other</label>
+                          </div>
+
+                          <!-- Membership Type -->
+                          <h6>Membership Type</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="membershipType" id="standard"
+                              value="Standard" checked>
+                            <label class="form-check-label" for="standard">Standard</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="membershipType" id="premium"
+                              value="Premium">
+                            <label class="form-check-label" for="premium">Premium</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="membershipType" id="ultimate"
+                              value="Ultimate">
+                            <label class="form-check-label" for="ultimate">Ultimate</label>
+                          </div>
+
+                          <!-- Preferred Way to Contact -->
+                          <h6>Preferred Way to Contact</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contactPhone" value="Phone">
+                            <label class="form-check-label" for="contactPhone">Phone</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contactEmail" value="Email">
+                            <label class="form-check-label" for="contactEmail">Email</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="contactAny" value="Any">
+                            <label class="form-check-label" for="contactAny">Any</label>
+                          </div>
+
+                          <!-- Membership Rules -->
+                          <h6>Membership Rules</h6>
+                          <p>1. Membership is available to anyone 18 years of age or older.</p>
+                          <p>2. You promise NOT to use it to conduct any fraudulent or business activity or have more
+                            than one Member Account at any time.</p>
+
+                          <!-- Consent Checkbox -->
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="consent">
+                            <label class="form-check-label" for="consent">I have read, understood, and accepted the
+                              rules for membership.</label>
+                          </div>
+
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <!-- Thank You Message -->
+                <div id="thankYouMessage" class="alert alert-success d-none" role="alert">
+                  Thank you for joining us! We appreciate your submission.
+                </div>
+
+
                 <form class="form-inline">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -727,6 +853,32 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+
+
+  <script>
+    document.getElementById('submitForm').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent form from submitting normally
+
+      const form = document.getElementById('joinForm');
+      const consentChecked = document.getElementById('consent').checked;
+
+      // Validate the form and check if consent is given
+      if (consentChecked) {
+        // Hide the modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('joinModal'));
+        modal.hide();
+
+        // Show the thank you message
+        document.getElementById('thankYouMessage').classList.remove('d-none');
+
+        // Reset the form (optional)
+        form.reset();
+      } else {
+        alert("You must accept the membership rules to continue.");
+      }
+    });
+  </script>
+
 
 </body>
 
